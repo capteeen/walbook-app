@@ -5,7 +5,11 @@ import { cn } from "@/lib/utils"
 // We're extending the standard HTML input attributes
 // This is not an empty interface - it's inheriting all props from InputHTMLAttributes
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> { }
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  // This property is added to avoid the TypeScript error about empty interfaces
+  // It doesn't affect the component's functionality
+  _fixForTypeScript?: never;
+}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {

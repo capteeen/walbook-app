@@ -350,7 +350,7 @@ export default function Home() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Your Security is Our Priority</h2>
               <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                We've built WalBook with a security-first approach, ensuring your addresses are always safe and private
+                We&apos;ve built WalBook with a security-first approach, ensuring your addresses are always safe and private
               </p>
             </motion.div>
 

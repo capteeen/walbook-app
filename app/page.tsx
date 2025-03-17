@@ -53,18 +53,6 @@ const cardHover = {
   }
 }
 
-// Stagger container for lists
-const listContainer = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.2
-    }
-  }
-}
-
 // Slide in animation
 const slideIn = {
   hidden: { x: -20, opacity: 0 },
@@ -75,33 +63,6 @@ const slideIn = {
       type: "spring",
       stiffness: 300,
       damping: 30
-    }
-  }
-}
-
-// Fade up animation with spring
-const fadeUp = {
-  hidden: { y: 40, opacity: 0 },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 200,
-      damping: 20
-    }
-  }
-}
-
-// Pulse animation for emphasis
-const pulse = {
-  rest: { scale: 1 },
-  hover: {
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.8,
-      repeat: Infinity,
-      ease: "easeInOut"
     }
   }
 }
@@ -846,8 +807,8 @@ export default function Home() {
             className="max-w-4xl mx-auto text-center relative"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to get started?</h2>
-            <p className="text-xl mb-8 text-gray-300 dark:text-gray-600">
-              Join thousands of users who trust WalBook for their address management needs.
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+              Don&apos;t miss out on the future of blockchain address management. Join thousands of users who trust WalBook for their daily crypto operations.
             </p>
             <motion.div
               whileHover={{ scale: 1.05 }}

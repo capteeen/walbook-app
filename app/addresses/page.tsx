@@ -1,11 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { CustomSelect } from "@/components/ui/custom-select"
 import {
   Dialog,
   DialogContent,
@@ -22,16 +20,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Plus, Search, Copy, Star, QrCode, Wallet, Filter, Trash2 } from "lucide-react"
+import { Plus, Search, Copy, QrCode, Trash2 } from "lucide-react"
 import { QRCodeSVG } from "qrcode.react"
 import { storage } from "@/lib/storage"
 import { v4 as uuidv4 } from 'uuid'

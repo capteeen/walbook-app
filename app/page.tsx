@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, Wallet, Shield, Search, QrCode, ChevronRight, Copy } from "lucide-react"
 import Link from "next/link"
 import { motion, LazyMotion, domAnimation } from "framer-motion"
